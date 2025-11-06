@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Chelita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<div class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="Restaurant Logo">
+    </div>
+    
+    <ul>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <h1>Welcome</h1>
+</div>
+
+<!-- VISIT -->
+    <section id="visit" class="visit-section">
+     <div class="visit-content">
+        <h2>Visit Us</h2>
+        <br>
+        <p>7428 Blanco Ridge Blvd<br>Austin, TX 78744</p>
+
+        <div class="hours">
+            <div class="meal-time">
+                <h4>Breakfast</h4>
+                <p>8am–11am</p>
+            </div>
+            <div class="meal-time">
+                <h4>Lunch</h4>
+                <p>11am–4pm</p>
+            </div>
+            <div class="meal-time">
+                <h4>Dinner</h4>
+                <p>4pm–11pm</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ABOUT -->
+    <section id="about" class="py-16 px-4 md:px-8 text-center bg-white rounded-lg max-w-6xl mx-auto my-12 shadow-xl">
+       <center> <h2 class="text-5xl font-serif font-semibold mb-8">About</h2></center>
+       <br>
+       <br>
+        
+        <!-- About Content Block -->
+        <p class="mt-4 max-w-4xl mx-auto leading-relaxed text-xl text-gray-700 text-left">
+            La Chelita is a family-owned restaurant rooted in heritage, community, and resilience. Founded in the 1970s by Graciela "Chelita" Ramírez as a small tortillería llamada La Tapatía, the business quickly became a neighborhood staple known for its handmade tortillas and traditional Jalisco-style dishes. Over the decades, it has remained a symbol of authentic Mexican cooking and a gathering place for local families. Now reimagined as La Chelita, the restaurant continues to honor its origins while evolving to reflect the changing neighborhood and new generations of diners.
+        </p>
+    </section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <h2>Menus</h2>
+
+  <!-- Menu Tabs -->
+  <div class="menu-tabs" id="menuTabs">
+    <button class="tab active" data-menu="dinner">Dinner</button>
+    <button class="tab" data-menu="lunch">Lunch</button>
+    <button class="tab" data-menu="breakfast">Breakfast</button>
+    <button class="tab" data-menu="drinks">Drinks</button>
+    <button class="tab" data-menu="desserts">Desserts</button>
+  </div>
+
+  <div class="tabs-underline" id="underline"></div>
+
+  <!-- ============ DINNER ============ -->
+  <div id="dinner" class="menu-pane active">
+    <div class="menu-content">
+      <div class="menu-left">
+        <h3>Appetizers</h3>
+        <hr class="rule">
+        <ul>
+          <li>Guacamole & Chips <span>7</span></li>
+          <li>Queso Fundido <span>8</span></li>
+          <li>Sopa de Tortilla <span>8</span></li>
+          <li>Mexican Street Corn <span>7</span></li>
+          <li>Nachos <span>10</span></li>
+          <li>Avocado Fries <span>10</span></li>
+          <li>Shrimp Ceviche Cups <span>12</span></li>
+          <li>Mini Tacos <span>9</span></li>
+          <li>La Chelita Wings <span>10</span></li>
+          <li>Empanadas de Pollo <span>9</span></li>
+          <li>Quesadilla Sampler <span>7</span></li>
+        </ul>
+
+        <hr class="divider">
+        <h3 class="entrees-title">Entrées</h3>
+        <div class="entrees">
+          <ul>
+            <li>Taco Combo Plate <span>14.50</span></li>
+            <li>Fish Tacos Baja Style <span>14</span></li>
+            <li>Veggie Street Tacos <span>10</span></li>
+            <li>Classic Burrito <span>13</span></li>
+            <li>Burrito Bowl <span>13</span></li>
+            <li>Spicy Chicken Burrito <span>13.50</span></li>
+            <li>Cheese Quesadilla <span>8</span></li>
+            <li>Chicken Quesadilla <span>10.50</span></li>
+            <li>Tostadas de Tinga <span>9</span></li>
+            <li>Huevos Rancheros <span>10</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-right">
+        <img src="../images/placeholder-dinner.jpg" alt="Dinner Dish" class="menu-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LUNCH ============ -->
+  <div id="lunch" class="menu-pane">
+    <div class="menu-content">
+      <div class="menu-left">
+        <h3>Appetizers</h3>
+        <hr class="rule">
+        <ul>
+          <li>Street Corn Cup <span>6</span></li>
+          <li>Guacamole <span>7</span></li>
+          <li>Chips & Salsa <span>4</span></li>
+          <li>Nachos <span>10</span></li>
+        </ul>
+        <hr class="divider">
+        <h3 class="entrees-title">Entrées</h3>
+        <div class="entrees">
+          <ul>
+            <li>Taco Salad <span>10.95</span></li>
+            <li>Pollo Asado Lunch Plate <span>14</span></li>
+            <li>Avocado Chicken Salad <span>11.50</span></li>
+            <li>Carne Asada Street Plate <span>17</span></li>
+            <li>Vegetarian Burrito Bowl <span>10</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-right">
+        <img src="../images/placeholder-lunch.jpg" alt="Lunch Dish" class="menu-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BREAKFAST ============ -->
+  <div id="breakfast" class="menu-pane">
+    <div class="menu-content">
+      <div class="menu-left">
+        <h3>Entrées</h3>
+        <hr class="rule">
+        <ul>
+          <li>Steak & Eggs <span>18.95</span></li>
+          <li>Omelet de la Casa <span>15</span></li>
+          <li>Avocado Toast Mexicano <span>11</span></li>
+          <li>Chilaquiles Verdes o Rojos <span>12.95</span></li>
+          <li>Huevos Rancheros <span>10.50</span></li>
+        </ul>
+      </div>
+      <div class="menu-right">
+        <img src="../images/placeholder-breakfast.jpg" alt="Breakfast Dish" class="menu-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DRINKS ============ -->
+  <div id="drinks" class="menu-pane">
+    <div class="menu-content">
+      <div class="menu-left">
+        <h3>Breakfast Drinks</h3>
+        <hr class="rule">
+        <ul>
+          <li>Orange Juice <span>3.50</span></li>
+          <li>Hot Coffee <span>3</span></li>
+          <li>Iced Coffee <span>3.50</span></li>
+          <li>Apple Juice <span>3.50</span></li>
+          <li>Tea <span>3</span></li>
+          <li>Milk <span>3</span></li>
+        </ul>
+
+        <hr class="divider">
+        <h3 class="entrees-title">All Day Drinks</h3>
+        <ul>
+          <li>Water <span>0</span></li>
+          <li>Lemonade <span>0</span></li>
+          <li>Jamaica <span>0</span></li>
+          <li>Horchata <span>0</span></li>
+          <li>Jarritos <span>0</span></li>
+          <li>Mexican Coke <span>0</span></li>
+        </ul>
+      </div>
+      <div class="menu-right">
+        <img src="../images/placeholder-drinks.jpg" alt="Drinks" class="menu-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DESSERTS ============ -->
+  <div id="desserts" class="menu-pane">
+    <div class="menu-content">
+      <div class="menu-left">
+        <h3>Entrées</h3>
+        <hr class="rule">
+        <ul>
+          <li>Churros con Chocolate <span>8</span></li>
+          <li>Tres Leches <span>12</span></li>
+          <li>Buñuelos <span>11</span></li>
+          <li>Chocolate Layer Cake <span>12</span></li>
+          <li>Banana Split <span>11</span></li>
+          <li>Lemon Meringue Pie <span>12</span></li>
+          <li>Peach Cobbler <span>11</span></li>
+        </ul>
+      </div>
+      <div class="menu-right">
+        <img src="../images/placeholder-dessert.jpg" alt="Dessert" class="menu-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Tab switching + underline animation
+  const tabs = document.querySelectorAll(".tab");
+  const panes = document.querySelectorAll(".menu-pane");
+  const underline = document.getElementById("underline");
+
+  function updateUnderline(activeTab) {
+    const rect = activeTab.getBoundingClientRect();
+    const parentRect = activeTab.parentElement.getBoundingClientRect();
+    underline.style.width = rect.width + "px";
+    underline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      panes.forEach(p => p.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.menu).classList.add("active");
+      updateUnderline(tab);
+    });
+  });
+
+  window.addEventListener("load", () => updateUnderline(document.querySelector(".tab.active")));
+  window.addEventListener("resize", () => updateUnderline(document.querySelector(".tab.active")));
+</script>
+
+
+
+
+
+
+</body>
+</html>
