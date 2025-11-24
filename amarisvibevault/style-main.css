@@ -1,0 +1,98 @@
+/* MAIN PAGE */
+
+/* Navigation Bar Container */
+.navbar {
+    background-color: #0D0D0D;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0px;
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Hero box container */
+.hero-box-container {
+    position: relative;
+    max-width: 650px;
+    margin: 40px auto 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title text */
+.hero-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+/* Background boxes */
+.color-box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+/* Change colors here */
+
+.color-box.blue {
+    background: #8EC5FC;
+    top: 20px;
+    right: -60px;
+}
+
+.color-box.green {
+    background: #C9F7BE;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Paragraph text under the hero */
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Timeline Section */
+.section-green {
+    padding: 70px 20px;
+    text-align: center;
+}
+.timeline-box-container {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.timeline-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.timeline-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+/* Center the timeline button */
+.timeline-btn {
+    margin-top: 10px;
+}

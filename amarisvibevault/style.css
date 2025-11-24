@@ -1,0 +1,78 @@
+/* COVER PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Full-page animated gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    animation: gradientAnimation 8s ease-in-out infinite;
+    background: linear-gradient(0deg, #e13126, #f57b2c, #ffea59);
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Background animation keyframes */
+@keyframes gradientAnimation {
+    0% { background-position: 50% 100%; }
+    50% { background-position: 50% 0%; }
+    100% { background-position: 50% 100%; }
+}
+/* Centering container */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo sizing */
+.logo {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 40px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}   /* ← THIS WAS MISSING */
+
+/* "OPEN" button styling */
+.open-btn {
+    font-size: 18px;
+    padding: 14px 50px;
+    background-color: #c8463a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    
+    /* shadow behind button */
+    box-shadow: 0px 6px 0px #000;
+}
+
+/* Button Hover */
+.open-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 0px #000;
+}
+
+/* Button click */
+.open-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 0px #000;
+}
+
+
