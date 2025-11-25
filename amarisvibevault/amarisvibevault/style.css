@@ -1,0 +1,180 @@
+/* COVER PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Full-page animated gradient background */
+body {
+     margin: 0;
+    padding: 0;
+    min-height: 100vh;   /* allows gradient to expand beyond 1 screen */
+    animation: gradientAnimation 8s ease-in-out infinite;
+    background: linear-gradient(0deg, #e13126, #f57b2c, #ffea59);
+    background-size: 300% 300%;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Background animation keyframes */
+@keyframes gradientAnimation {
+    0% { background-position: 50% 100%; }
+    50% { background-position: 50% 0%; }
+    100% { background-position: 50% 100%; }
+}
+/* Centering container */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo sizing */
+.logo {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 40px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}  
+
+/* "OPEN" button styling */
+.open-btn {
+    font-size: 18px;
+    padding: 14px 50px;
+    background-color: #c8463a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    
+    /* shadow behind button */
+    box-shadow: 0px 6px 0px #000;
+}
+
+/* Button Hover */
+.open-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 0px #000;
+}
+
+/* Button click */
+.open-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 0px #000;
+}
+
+/* Fade-out animation when OPEN is clicked */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+
+/* MAIN PAGE */
+
+/* Basic Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Navigation Bar Container */
+.navbar {
+    background-color: #000;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+/* Navigation Menu List */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+/* Navigation Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Navigation Links */
+.navbar a:hover {
+    color: #ffa500;
+}
+
+body.main-page {
+    display: block; 
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+
+
+/* WELCOME SECTION */
+.welcome-section {
+    max-width: 800px;    
+    margin: 0 auto;      
+    text-align: center;  
+    padding: 60px 20px;  
+}
+
+/* Header styling */
+.welcome-section h1 {
+    font-size: 42px;     
+    font-weight: bold;
+    margin-bottom: 40px; 
+}
+
+/* Paragraph styling */
+.welcome-section p {
+    font-size: 22px;     
+    line-height: 1.6;    
+    font-weight: 500;
+}
+
+/* TIMELINE*/
+.timeline-section{
+    max-width: 800px;    
+    margin: 0 auto;      
+    text-align: center;  
+    padding: 60px 20px; 
+}
+
+/* Header styling */
+.timeline-section h1 {
+    font-size: 42px;     
+    font-weight: bold;
+    margin-bottom: 40px; 
+}
+
+/* Paragraph styling */
+.timeline-section p {
+    font-size: 22px;     
+    line-height: 1.6;    
+    font-weight: 500;
+}
+
