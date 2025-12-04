@@ -4,61 +4,326 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amari's Vibe Vault</title>
-
-    <!-- Base styles (cover page + shared styles) -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Main page overrides -->
-    <link rel="stylesheet" href="style-main.css">
 </head>
-<body>
- <!-- Navigation Bar -->
+
+<body class="main-page">
+
+<!-- Navigation Bar -->
 <div class="navbar">
     
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#favs">FAVS</a></li>
-        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#favs">Favs</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#top3">Top 3</a></li>
     </ul>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- LOGO IMAGE -->
+       <div class="container">
+        <img
+            src="logo.png" 
+            alt="Amari's Vibe Vault Logo" 
+            class="logo"
+       > </div>
+            <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- WELCOME -->
+<div class="welcome-section" id="about">
     
-    <!-- Main -->
-<div class="main-content">
 
-    <!-- Logo Section -->
-    <section id="about" class="section section-yellow">
-        <img src="logo.png" alt="Vibe Vault Logo" class="logo">
-    </section>
+    <h1>Welcome to my musical vault!</h1>
 
-    <!-- About Section -->
-    <<section id="about" class="section section-blue">
-    <div class="hero-box-container">
-        <h2 class="hero-title">Welcome to my musical vault!</h2>
-
-        <div class="color-box blue"></div>
-    </div>
-
-    <p class="about-text"> I feel like as a designer I design a lot for others. Which is ideal of course! I mean that’s what pay the bills at the end of the day.., But I wanted to create this website for me to come back to. I love music and whenever I work I always have something playing. I love all types of music and my favorite songs always tend to change the more and more I listen. Whoever stumbles across this I hope I put you on to some great tunes! Or even relate to me in a way through music </p>
-</section>
-
-
-
-    
-
-    <!-- Timeline Section -->
-    <section id="timeline" class="section section-green">
-
-    <div class="timeline-box-container">
-        <h2 class="timeline-title">Timeline of my music taste</h2>
-        <div class="color-box green"></div>
-    </div>
-
-    <p class="timeline-text">
-        Short timeline of how my music taste transformed!
+    <p>
+        I feel like as a designer I design a lot for others. Which is ideal of course! 
+        I mean that’s what pays the bills at the end of the day… But I wanted to create 
+        this website for me to come back to. I love music and whenever I work I always 
+        have something playing. I love all types of music and my favorite songs always 
+        tend to change the more and more I listen. Whoever stumbles across this I hope 
+        I put you on to some great tunes! Or even relate to me in a way through music.
     </p>
 
-    <button class="open-btn timeline-btn">OPEN</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- CURRENT FAVORITE SONGS -->
+<section class="favorites-section" id="favs">
+    <h1 class="fav-title">Current favorite songs</h1>
+    <br>
+    <br>
+
+    <div class="favorites-grid">
+
+        <!-- SONG 1 -->
+        <div class="song-card">
+            <img src="iloveuihateu.png" alt="ILoveUIHateU" class="album-img" onclick="playSong('iloveuihateu.mp3')">
+            <p>ILoveUIHateU</p>
+        </div>
+
+        <!-- SONG 2 -->
+        <div class="song-card">
+            <img src="2_35.png" alt="hmu" class="album-img" onclick="playSong('2_35.mp3')">
+            <p>2:35</p>
+        </div>
+
+        <!-- SONG 3 -->
+        <div class="song-card">
+            <img src="luciddreams.png" alt="Lucid Dreams" class="album-img" onclick="playSong('luciddreams.mp3')">
+            <p>Lucid Dreams</p>
+        </div>
+
+        <!-- SONG 4 -->
+        <div class="song-card">
+            <img src="othershit.png" alt="Other Shit" class="album-img" onclick="playSong('othershit.mp3')">
+            <p>Other Shit</p>
+        </div>
+
+        <!-- SONG 5 -->
+        <div class="song-card">
+            <img src="toxic.png" alt="TOXIC" class="album-img" onclick="playSong('toxic.mp3')">
+            <p>TOXIC</p>
+        </div>
+
+        <!-- SONG 6 -->
+        <div class="song-card">
+            <img src="ripcord.png" alt="RIPCORD" class="album-img" onclick="playSong('ripcord.mp3')">
+            <p>RIPCORD</p>
+        </div>
+
+        <!-- SONG 7 -->
+        <div class="song-card">
+            <img src="keeper.png" alt="KEEPER" class="album-img" onclick="playSong('keeper.mp3')">
+            <p>KEEPER</p>
+        </div>
+
+        <!-- SONG 8 -->
+        <div class="song-card">
+            <img src="crank.png" alt="CRANK" class="album-img" onclick="playSong('crank.mp3')">
+            <p>CRANK</p>
+        </div>
+
+        <!-- SONG 9 -->
+        <div class="song-card">
+            <img src="lean4real.png" alt="Lean4Real" class="album-img" onclick="playSong('lean4real.mp3')">
+            <p>Lean4Real</p>
+        </div>
+
+        <!-- SONG 10 -->
+        <div class="song-card">
+            <img src="disillusioned.png" alt="Disillusioned" class="album-img" onclick="playSong('disillusioned.mp3')">
+            <p>Disillusioned</p>
+        </div>
+
+        <!-- SONG 11 -->
+        <div class="song-card">
+            <img src="crackrock.png" alt="Crack Rock" class="album-img" onclick="playSong('crackrock.mp3')">
+            <p>Crack Rock</p>
+        </div>
+
+        <!-- SONG 12 -->
+        <div class="song-card">
+            <img src="olympian.png" alt="OLYMPIAN" class="album-img" onclick="playSong('olympian.mp3')">
+            <p>OLYMPIAN</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- AUDIO PLAYER (hidden) -->
+<audio id="musicPlayer"></audio>
+
+<script>
+function playSong(file) {
+    const player = document.getElementById('musicPlayer');
+    player.src = file;
+    player.play();
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- PLAYLIST SECTION -->
+<div class="container" id="playlist">
+    <img src="playlists.png" alt="Music Header" class="logo">
+</div>
+
+<div class="welcome-section">
+
+    <h1>“Late Night Only”</h1>
+
+    <p>
+        As said in the title i only pretty much listen to this playlist when it’s night time.
+        I drive a lot so when the sun sets I play this and vibe out! A lot of these songs are
+        slow paced and have this atmospheric like sense to them. This is probably my favorite
+        playlist out of the bunch.
+    </p>
+<br>
+<br>
+<br>
+    <a href="https://open.spotify.com/playlist/674w9SyDpeAEzHwqtpIfNi" class="open-btn" target="_blank">OPEN</a>
+
+</div>
+
+<div class="welcome-section">
+
+    <h1>“Car Bops”</h1>
+
+    <p>
+        This is all hype music and almost all rap and trap music. A LOT of Playboi Carti, Gunna, And Lil uzi. but there are many more artist in this playlist. A lot of variety and I would recommend listening to this when your tired driving... It will definitely wake you up.
+    </p>
+    <br>
+<br>
+<br>
+
+    <a href="https://open.spotify.com/playlist/44c5PSxBgUzNjb0iTeD2ao" class="open-btn" target="_blank">OPEN</a>
+
+</div>
+
+<div class="welcome-section">
+
+    <h1>“Back in my day”</h1>
+
+    <p>
+        This playlist has a small place in my heart I get a lot of inspo from my parents while making this playlist and basically just listening to the songs they used to play around me when I was younger.
+    </p>
+    <br>
+<br>
+<br>
+
+    <a href="https://open.spotify.com/playlist/1qXdoQTzQZxCenu73rSu4y" class="open-btn" target="_blank">OPEN</a>
+
+</div>
+
+
+<!-- ALL TIME FAVORITE ARTISTS SECTION -->
+<section class="favorite-artists" id="top3">
+
+    <h2>ALL TIME favorite artist</h2>
+
+    <div class="artist-grid">
+
+        <!-- CARD 1 -->
+        <div class="artist-card">
+            <img src="carti.png" alt="Artist 1">
+            <div class="artist-info">
+                <h3>Playboi Carti</h3>
+                <p>
+                    Mr. Jordan Carter may be the greatest rapper of this generation.<br>
+                    <br>
+
+                    Top Songs: <br>
+                    1. ILUVUHATEU <br>
+                    2. Foreign <br>
+                    3. Stop Breathing
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="artist-card">
+            <img src="gunna.png" alt="Artist 2">
+            <div class="artist-info">
+                <h3>Gunna</h3>
+                <p>
+                    His flows on his songs are amazing. <br>
+                    <br>
+                    Top songs: <br>
+                    1. 200 for lunch <br>
+                    2. South West <br>
+                    3. Car Wash
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="artist-card">
+            <img src="liluzi.png" alt="Artist 3">
+            <div class="artist-info">
+                <h3>Lil Uzi Vert</h3>
+                <p>
+                    One of the first artists I listened to. <br>
+                    <br>
+                    Top song: <br>
+                    Money Longer
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ALL TIME FAV SONGS -->
+<section class="favorites-section">
+    <h1 class="fav-title">ALL TIME favorite songs</h1>
+    <br>
+    <br>
+
+    <div class="favorites-grid">
+
+        <!-- SONG 1 -->
+        <div class="song-card">
+            <img src="iloveuihateu.png" alt="ILoveUIHateU" class="album-img" onclick="playSong('iloveuihateu.mp3')">
+            <p>ILoveUIHateU</p>
+        </div>
+
+        <!-- SONG 2 -->
+        <div class="song-card">
+            <img src="allnightlong.png" alt="hmu" class="album-img" onclick="playSong('allnightlong.mp3')">
+            <p>All Night Long</p>
+        </div>
+
+        <!-- SONG 3 -->
+        <div class="song-card">
+            <img src="21questions.png" alt="Lucid Dreams" class="album-img" onclick="playSong('21questions.mp3')">
+            <p>21 Questions</p>
+        </div>
+    </div></section>
+
+    <!-- SONG OF THE DAY -->
+<!-- SONG OF THE DAY -->
+<section class="favorites-section">
+    <h1 class="fav-title">Song of the day!</h1>
+
+    <div class="song-of-day-grid">
+
+        <div class="song-card">
+            <img src="nmom.png" 
+                 alt="nmom" 
+                 class="album-img" 
+                 onclick="playSong('nmom.mp3')">
+            <p>No More Old Men</p>
+        </div>
+
+    </div>
 </section>
 
 </body>
