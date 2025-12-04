@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Amari's Vibe Vault!</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Amari's Vibe Vault!</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <br>
+<br>
+<br>
+<br>
+<br>
 
- <div class="container">
+<div id="coverContainer" class="container">
 
-        <!-- LOGO IMAGE -->
-        <img 
-            src="logo.png" 
-            alt="Amari's Vibe Vault Logo" 
-            class="logo"
-        >
+    <!-- LOGO IMAGE -->
+    <img src="logo.png" alt="Amari's Vibe Vault Logo" class="logo">
 
-        <!-- ANIMATED BUTTON -->
-        <a href="mainpage.html" class="open-btn">OPEN</a>
+    <!-- OPEN BUTTON -->
+    <a id="openBtn" href="mainpage.html" class="open-btn">OPEN</a>
+<script>
+document.getElementById("openBtn").addEventListener("click", function(event) {
 
-    </div>
+    event.preventDefault(); // Stop page from switching immediately
 
+    // Apply fade-out class to the whole cover page
+    document.body.classList.add("fade-out");
 
+    // Wait for fade animation to finish, then go to main page
+    setTimeout(() => {
+        window.location.href = "mainpage.html";
+    }, 800); // match your CSS transition time
+});
 </script>
+</div>
 
 
 
