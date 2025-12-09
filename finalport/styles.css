@@ -1,0 +1,95 @@
+/* Global */
+body {
+    margin: 0;
+    background: #CA3636;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Top Header */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+
+/* Page Title */
+.title {
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+/* Horizontal Rules */
+.top-rule,
+.bottom-rule {
+    height: 2px;
+    background: black;
+    width: 93%;
+    margin: 10px auto 40px auto; /* spacing matches the mock-up */
+}
+
+/* Project Boxes Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+/* Project Boxes */
+.project-box {
+    width: 180px;
+    height: 180px;
+    background: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* The number inside the black box */
+.number {
+    font-size: 48px;
+    z-index: 2;
+}
+
+/* Hidden project image */
+.project-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Hover: fade number out + fade image in */
+.project-box:hover img {
+    opacity: 1;
+}
+
+.project-box:hover .number {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-link {
+    text-decoration: none;
+}
+/* Remove default link colors */
+.project-link,
+.project-link:visited,
+.project-link:hover,
+.project-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+/* Ensure number stays white inside the black box */
+.project-link .number {
+    color: white;
+}
